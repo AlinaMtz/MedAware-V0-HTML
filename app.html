@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>MedAware</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>MedAware</h1>
+
+<p>
+Aprende a reconocer emergencias médicas jugando.
+</p>
+
+</header>
+
+<div class="container">
+
+    <aside>
+
+        <h2> Lecciones</h2>
+
+        <button onclick="cambiarTema('ACV')">🧠 ACV</button>
+
+        <button onclick="cambiarTema('Infarto')">❤️ Infarto</button>
+
+        <button onclick="cambiarTema('Convulsiones')">⚡ Convulsiones</button>
+
+        <button onclick="cambiarTema('Desmayo')">🌀 Desmayo</button>
+
+    </aside>
+
+    <main>
+
+        <div class="stats">
+
+            <div id="score">
+                ⭐ 0 pts
+            </div>
+
+            <div id="nivel">
+                🏆 Nivel 1
+            </div>
+
+            <div id="racha">
+                🔥 5
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="titulo">
+
+                ACV
+
+            </h2>
+
+            <p id="pregunta">
+
+                Aquí aparecerá la pregunta.
+
+            </p>
+
+            <div id="opciones">
+
+            </div>
+
+            <p id="feedback"></p>
+
+            <button onclick="siguiente()">
+
+                Siguiente reto
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+
